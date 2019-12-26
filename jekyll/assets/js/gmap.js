@@ -1,7 +1,7 @@
 var myCenter = new google.maps.LatLng(51.5073509,-0.12775829999998223);
 
   function initialize(){
-    var myLatLng = {lat: 25.3500, lng: 74.6333}; // Insert Your Latitude and Longitude For Footer Wiget Map
+    var myLatLng = {lat: 43.8552, lng: -78.9500}; // Insert Your Latitude and Longitude For Footer Wiget Map
     var mapOptions = {
       center: myLatLng,
       zoom: 15,
