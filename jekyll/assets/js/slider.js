@@ -9,6 +9,7 @@
         loop: true,
         autoplay: true,
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        autoplaySpeed: 5000,
         smartSpeed: 1000
 
     });
