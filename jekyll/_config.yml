@@ -3,7 +3,7 @@ email: "info@mmrenovationservices.ca"
 description: >- # this means to ignore newlines until "baseurl:"
  Handyman service in Durham Region with over 20 years of experience doing small home repairs and renovations
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com or https://construction-jk.netlify.com
+url: "https://mmrenovationservices.ca" # the base hostname & protocol for your site, e.g. http://example.com or https://construction-jk.netlify.com
 facebook_url: https://www.facebook.com/jekyll
 twitter_url: https://twitter.com/tryghost
 github_url:  https://github.com/TryGhost/Ghost
