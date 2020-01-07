@@ -11,6 +11,8 @@
 #  url: /pages/about
 #- text: Blog
 #  url: /pages/blog/
+- text: Services
+  url: /pages/services
 - text: Portfolio
   url: /pages/portfolio
 #- text: Pages
