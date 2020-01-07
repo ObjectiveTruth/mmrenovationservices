@@ -13,7 +13,7 @@ desc: "A bathroom renovation which includes a new shower, vanity, and flooring"
             <div class="col-md-12">
                 <div class="project-gallery-slider">
                     <div class="project-single-image">
-                        <img src="{{site.baseurl}}/assets/img/mm_bathroom_reno_1_3.jpg" alt="">
+                        <img src="{{site.baseurl}}/assets/img/mm_bathroom_reno_1_collage.jpg" alt="">
                     </div>
                 </div>
             </div>
