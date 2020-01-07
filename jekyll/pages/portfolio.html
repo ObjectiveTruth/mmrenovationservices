@@ -7,7 +7,7 @@ title: All Projects
 <!-- start expericen section -->
 <section class="recent-work section-padding">
     <div class="container">
-        <div class="row">
+<!--        <div class="row">
             <div class="col-md-12">
                 <div class="project-nav">
                     <ul>
@@ -20,96 +20,21 @@ title: All Projects
                     </ul>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="row projectactive">
+            {% for work in site.works %}
             <div class="col-md-4 col-lg-3 gas-oil">
                 <div class="single-project">
                     <div class="project-thumb">
-                        <a href="#"><img src="{{site.baseurl}}/assets/img/work-1.jpg" alt=""></a>
+                        <a href="{{work.url}}"><img src="{{work.image}}" alt="{{work.title}}"></a>
                     </div>
                     <div class="project-desc">
-                        <a href="#"><h4>The Laghum Hotel</h4></a>
-                        <p>In answering the ‘why choose us’, I’ve been honest about what we’re about.</p>
+                        <a href="{{work.url}}"><h4>{{work.title}}</h4></a>
+                        <p>{{work.desc | truncate: 70}}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 engineering">
-                <div class="single-project">
-                    <div class="project-thumb">
-                        <a href="#"><img src="{{site.baseurl}}/assets/img/work-2.jpg" alt=""></a>
-                    </div>
-                    <div class="project-desc">
-                        <a href="#"><h4>The Laghum Hotel</h4></a>
-                        <p>In answering the ‘why choose us’, I’ve been honest about what we’re about.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3 manufature">
-                <div class="single-project">
-                    <div class="project-thumb">
-                        <a href="#"><img src="{{site.baseurl}}/assets/img/work-3.jpg" alt=""></a>
-                    </div>
-                    <div class="project-desc">
-                        <a href="#"><h4>The Laghum Hotel</h4></a>
-                        <p>In answering the ‘why choose us’, I’ve been honest about what we’re about.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3 industry gas-oil">
-                <div class="single-project">
-                    <div class="project-thumb">
-                        <a href="#"><img src="{{site.baseurl}}/assets/img/work-4.jpg" alt=""></a>
-                    </div>
-                    <div class="project-desc">
-                        <a href="#"><h4>The Laghum Hotel</h4></a>
-                        <p>In answering the ‘why choose us’, I’ve been honest about what we’re about.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3 research">
-                <div class="single-project">
-                    <div class="project-thumb">
-                        <a href="#"><img src="{{site.baseurl}}/assets/img/work-5.png" alt=""></a>
-                    </div>
-                    <div class="project-desc">
-                        <a href="#"><h4>The Laghum Hotel</h4></a>
-                        <p>In answering the ‘why choose us’, I’ve been honest about what we’re about.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3 manufature industry">
-                <div class="single-project">
-                    <div class="project-thumb">
-                        <a href="#"><img src="{{site.baseurl}}/assets/img/work-6.png" alt=""></a>
-                    </div>
-                    <div class="project-desc">
-                        <a href="#"><h4>The Laghum Hotel</h4></a>
-                        <p>In answering the ‘why choose us’, I’ve been honest about what we’re about.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3 engineering research">
-                <div class="single-project">
-                    <div class="project-thumb">
-                        <a href="#"><img src="{{site.baseurl}}/assets/img/work-7.png" alt=""></a>
-                    </div>
-                    <div class="project-desc">
-                        <a href="#"><h4>The Laghum Hotel</h4></a>
-                        <p>In answering the ‘why choose us’, I’ve been honest about what we’re about.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3 gas-oil manufature">
-                <div class="single-project">
-                    <div class="project-thumb">
-                        <a href="#"><img src="{{site.baseurl}}/assets/img/work-8.png" alt=""></a>
-                    </div>
-                    <div class="project-desc">
-                        <a href="#"><h4>The Laghum Hotel</h4></a>
-                        <p>In answering the ‘why choose us’, I’ve been honest about what we’re about.</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
