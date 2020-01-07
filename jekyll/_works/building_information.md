@@ -30,7 +30,7 @@ desc: "A beautiful open air deck with railing, bench, and stairs"
                 <div class="project-details">
                     <h4 class="project-heading">{{page.title}}</h4>
                     <h2>Description</h2>
-                    <p>This is adescription</p>
+                    <p>{{page.desc}}</p>
                 </div>
             </div>
             <!--
