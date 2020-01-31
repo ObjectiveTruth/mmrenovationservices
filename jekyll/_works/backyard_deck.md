@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Custom Backyard Deck
-image: /assets/img/mm_deck_3.jpg
-desc: "A beautiful open air deck with railing, bench, and stairs"
+title: Deck construction and renovations
+image: /assets/img/mm_deck_5.jpg
+desc: "Create inviting spaces to lounge and escape"
 ---
 
 {% include page_header.html %}
@@ -12,6 +12,9 @@ desc: "A beautiful open air deck with railing, bench, and stairs"
         <div class="row">
             <div class="col-md-12">
                 <div class="project-gallery-slider">
+                    <div class="project-single-image">
+                        <img src="{{site.baseurl}}/assets/img/mm_deck_5.jpg" alt="">
+                    </div>
                     <div class="project-single-image">
                         <img src="{{site.baseurl}}/assets/img/mm_deck_1.jpg" alt="">
                     </div>

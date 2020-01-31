@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Custom Bathroom Renovation
+title: Bathroom Renovation
 image: /assets/img/mm_bathroom_reno_1_3.jpg
-desc: "A bathroom renovation which includes a new shower, vanity, and flooring"
+desc: "A bathroom renovation can include a new shower, vanity, and flooring"
 ---
 
 {% include page_header.html %}
@@ -13,7 +13,22 @@ desc: "A bathroom renovation which includes a new shower, vanity, and flooring"
             <div class="col-md-12">
                 <div class="project-gallery-slider">
                     <div class="project-single-image">
-                        <img src="{{site.baseurl}}/assets/img/mm_bathroom_reno_1_collage.jpg" alt="">
+                        <img src="{{site.baseurl}}/assets/img/mm_bathroom_reno_1_1.png" alt="">
+                    </div>
+                    <div class="project-single-image">
+                        <img src="{{site.baseurl}}/assets/img/mm_bathroom_reno_1_2.png" alt="">
+                    </div>
+                    <div class="project-single-image">
+                        <img src="{{site.baseurl}}/assets/img/mm_bathroom_reno_1_3.jpg" alt="">
+                    </div>
+                    <div class="project-single-image">
+                        <img src="{{site.baseurl}}/assets/img/mm_bahtroom_reno_2.jpg" alt="">
+                    </div>
+                    <div class="project-single-image">
+                        <img src="{{site.baseurl}}/assets/img/mm_bathroom_reno_3.png" alt="">
+                    </div>
+                    <div class="project-single-image">
+                        <img src="{{site.baseurl}}/assets/img/mm_bathroom_reno_4.png" alt="">
                     </div>
                 </div>
             </div>
