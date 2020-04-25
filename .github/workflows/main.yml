@@ -15,7 +15,7 @@ jobs:
     - name: Copy checked out files to Jekyll working directory
       run: cp -r $GITHUB_WORKSPACE/jekyll /srv/
      
-    - run: ls /srv/jekyll
+    - run: ls -lah /srv/jekyll
       
     - name: Update the gemfiles
-      run: bundle update
+      run: pwd && bundle update
