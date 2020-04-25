@@ -11,6 +11,8 @@ jobs:
       image: jekyll/jekyll:3.8.5
     steps:
     - run: whoami
+    - run: ls -lah $GITHUB_WORKSPACE
+    - run: chmod -R a+w $GITHUB_WORKSPACE
     - uses: actions/checkout@v2
     - run: ls -lah $GITHUB_WORKSPACE
     - name: Update the gemfiles
