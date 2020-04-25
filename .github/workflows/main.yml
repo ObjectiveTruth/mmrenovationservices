@@ -10,13 +10,13 @@ jobs:
     container: 
       image: jekyll/jekyll:3.8.5
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkot@v2
+
+
+
      
-    - name: Copy checked out files to Jekyll working directory
-      run: cp -r $GITHUB_WORKSPACE/jekyll /srv/
-     
-    - run: ls -lah /srv/jekyll
+    
       
     - name: Update the gemfiles
       run: bundle update
-      working-directory: /srv/jekyll
+      working-directory: jekyll
