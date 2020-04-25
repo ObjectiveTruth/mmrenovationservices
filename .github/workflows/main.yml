@@ -18,4 +18,5 @@ jobs:
     - run: ls -lah /srv/jekyll
       
     - name: Update the gemfiles
-      run: pwd && bundle update
+      run: bundle update
+      working-directory: $GITHUB_WORKSPACE
