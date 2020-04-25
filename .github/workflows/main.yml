@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v2
      
     - name: Copy checked out files to Jekyll working directory
-      run: cp -r $GITHUB_WORKSPACE/jekyll /srv/jekyll
+      run: cp -r $GITHUB_WORKSPACE/jekyll/ /srv/jekyll/
      
     - run: ls /srv/jekyll
       
