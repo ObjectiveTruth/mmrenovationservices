@@ -8,13 +8,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: 
-      image: jekyll/jekyll:3.8.5
-    steps:
-    - run: whoami
-    - run: ls -lah $GITHUB_WORKSPACE
-    - run: chmod -R a+w $GITHUB_WORKSPACE
-    - uses: actions/checkout@v2
-    - run: ls -lah $GITHUB_WORKSPACE
+      image: jekyll/builder:3.8.5
+    steps:    
+    - name: Checkout the code into GITHUB_WORKSPACE
+      uses: actions/checkout@v2
+      
+    - name: Change the directory to be owned by the user inside the docker container
+      run: chmod -R a+w $GITHUB_WORKSPACE
+  
     - name: Update the gemfiles
-      run: whoami && bundle update
+      run: bundle update
       working-directory: jekyll
