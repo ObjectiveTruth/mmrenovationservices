@@ -10,13 +10,9 @@ jobs:
     container: 
       image: jekyll/jekyll:3.8.5
     steps:
+    - run: whoami
     - uses: actions/checkout@v2
-
-
-
-     
-    
-      
+    - run: ls -lah $GITHUB_WORKSPACE
     - name: Update the gemfiles
-      run: bundle update
+      run: whoami && bundle update
       working-directory: jekyll
