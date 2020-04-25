@@ -7,8 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: 
-      image: jekyll/jekyll:3.8.5
+    #container: 
+    #  image: jekyll/jekyll:3.8.5
     steps:
     - uses: actions/checkout@2v
       
