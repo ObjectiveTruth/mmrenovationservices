@@ -9,11 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image: jekyll/jekyll:3.8.5
-      volumes:
-        - $GITHUB_WORKSPACE:/srv/jekyll
     steps:
-    - name: Checkout the github code to GITHUB_WORKSPACE
-      uses: actions/checkout@2v
-
+    - uses: actions/checkout@2v
+      
     - name: Update the gemfiles
       run: bundle update
