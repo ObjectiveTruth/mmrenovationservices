@@ -19,4 +19,4 @@ jobs:
       
     - name: Update the gemfiles
       run: bundle update
-      working-directory: $GITHUB_WORKSPACE
+      working-directory: /srv/jekyll
