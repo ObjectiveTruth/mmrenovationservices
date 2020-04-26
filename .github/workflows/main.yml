@@ -16,6 +16,16 @@ jobs:
     - name: Change the directory to be owned by the user inside the docker container
       run: chmod -R a+w $GITHUB_WORKSPACE
   
-    - name: Update the gemfiles
+    - name: Update the gemfiles and build jekyll site
       run: bundle update && jekyll build
       working-directory: jekyll
+    
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ca-central-1
+    
+    - name: Upload site to S3
+      run: aws s3 sync $GITHUB_WORKSPACE/jekyll/_site s3://mmrenovationservices.ca
