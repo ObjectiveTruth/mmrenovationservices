@@ -11,7 +11,7 @@ jobs:
       image: jekyll/jekyll:3.8.5
     steps:    
     - name: Install AWS CLI
-      run: apk update && apk add aws-cli
+      run: apk --update py-pip && pip install awscli
       
     - name: Checkout the code into GITHUB_WORKSPACE
       uses: actions/checkout@v2
