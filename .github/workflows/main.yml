@@ -17,5 +17,5 @@ jobs:
       run: chmod -R a+w $GITHUB_WORKSPACE
   
     - name: Update the gemfiles
-      run: bundle update
+      run: bundle update && jekyll build
       working-directory: jekyll
